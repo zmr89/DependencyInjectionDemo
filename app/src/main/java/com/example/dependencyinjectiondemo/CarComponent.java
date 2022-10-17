@@ -2,8 +2,8 @@ package com.example.dependencyinjectiondemo;
 
 import dagger.Component;
 
-@Component
+@Component(modules = {CarChassisModule.class, LithiumIonBatteryModule.class})
 public interface CarComponent {
 
-    Car getCar();
+//    Car getCar();
 }
